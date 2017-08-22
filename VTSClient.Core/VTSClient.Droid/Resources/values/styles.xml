@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="MyTheme.Base" parent="Theme.AppCompat.Light">
+  </style>
+
+  <style name="MyTheme" parent="MyTheme.Base">
+  </style>
+
+  <style name="MyTheme.Splash" parent ="Theme.AppCompat.Light">
+    <item name="android:windowBackground">@drawable/Splash_bg</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+  <style name="MyTheme.Login" parent ="Theme.AppCompat.Light">
+    <item name="android:windowBackground">@drawable/Login_bg</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+  <style name="SpinnerDatePicker" parent="android:Widget.Material.DatePicker">
+      <item name="android:datePickerMode">spinner</item>
+  </style>
+  <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+    <item name="background">@color/blue</item>
+  </style>
+  <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+      <item name="android:datePickerStyle">@style/SpinnerDatePicker</item>
+  </style>
+  <style name="MyTheme.Main" parent ="Theme.AppCompat.Light">
+    <item name="android:windowBackground">@color/white_back</item>
+    <item name="actionBarStyle">@style/MyActionBar</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <style name="ImageButStyle">
+    <item name="android:layout_width">20sp</item>
+    <item name="android:layout_height">20sp</item>
+    <item name="android:background">@drawable/uncheckedButton</item>
+    <item name="android:paddingLeft">10sp</item>
+    <item name="android:paddingRight">10sp</item>
+  </style>
+</resources>
+
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuView">
+            <connections>
+                <outlet property="SectionTable" destination="qV3-Ir-DSR" id="4q1-VN-kIi"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Avatar_Ark" translatesAutoresizingMaskIntoConstraints="NO" id="I2U-gb-p7T">
+                    <rect key="frame" x="67" y="48" width="240" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="ElR-NG-abh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Arkadiy Dobkin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T81-Ri-lt5">
+                    <rect key="frame" x="0.0" y="195" width="375" height="23"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" red="0.23137254900000001" green="0.76862745099999996" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qV3-Ir-DSR">
+                    <rect key="frame" x="0.0" y="226" width="375" height="456"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="477" id="FsS-r5-dWI"/>
+                    </constraints>
+                    <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="I2U-gb-p7T" firstAttribute="top" secondItem="2" secondAttribute="top" constant="70" id="7gC-TD-hTP"/>
+                <constraint firstItem="qV3-Ir-DSR" firstAttribute="top" secondItem="I2U-gb-p7T" secondAttribute="bottom" constant="35" id="CHv-8p-kUD"/>
+                <constraint firstAttribute="trailing" secondItem="qV3-Ir-DSR" secondAttribute="trailing" id="DC9-kT-gi6"/>
+                <constraint firstItem="qV3-Ir-DSR" firstAttribute="leading" secondItem="T81-Ri-lt5" secondAttribute="leading" id="HLJ-P1-inP"/>
+                <constraint firstAttribute="bottom" secondItem="qV3-Ir-DSR" secondAttribute="bottom" id="bFP-Ju-6nP"/>
+                <constraint firstItem="I2U-gb-p7T" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="67" id="hZJ-3x-nzr"/>
+                <constraint firstItem="qV3-Ir-DSR" firstAttribute="top" secondItem="T81-Ri-lt5" secondAttribute="bottom" constant="15" id="jwB-xh-QCE"/>
+                <constraint firstItem="qV3-Ir-DSR" firstAttribute="centerX" secondItem="I2U-gb-p7T" secondAttribute="centerX" id="nSH-qP-4lf"/>
+                <constraint firstItem="qV3-Ir-DSR" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="ocG-hd-T4k"/>
+                <constraint firstItem="qV3-Ir-DSR" firstAttribute="trailing" secondItem="T81-Ri-lt5" secondAttribute="trailing" id="rjI-7n-j0q"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Avatar_Ark" width="384" height="348"/>
+    </resources>
+</document>

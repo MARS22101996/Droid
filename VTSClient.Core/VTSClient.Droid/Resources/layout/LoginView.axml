@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="83.5dp"
+        android:id="@+id/errorText"
+        android:layout_marginRight="60.5dp"
+        android:layout_marginLeft="62.5dp"
+        android:layout_marginBottom="40.5dp" />
+    <EditText
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="@dimen/abc_panel_menu_list_width"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
+        android:id="@+id/login"
+        android:layout_gravity="center"
+        android:background="@color/background_floating_material_light"
+        android:textColor="@color/background_floating_material_dark"
+        android:layout_marginBottom="13.5dp"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:editable="true"
+        android:enabled="true" />
+    <EditText
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="@dimen/abc_panel_menu_list_width"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
+        android:id="@+id/password"
+        android:layout_gravity="center"
+        android:background="@color/background_floating_material_light"
+        android:textColor="@color/background_floating_material_dark"
+        android:layout_marginBottom="13.5dp"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:hint="Password"
+        style="@style/AlertDialog.AppCompat"
+        android:inputType="text"
+        android:password="true" />
+    <Button
+        android:text="SIGN IN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSignIn"
+        android:layout_marginLeft="75.0dp"
+        android:layout_marginRight="75.0dp"
+        android:background="@color/material_deep_teal_200" />
+</LinearLayout>

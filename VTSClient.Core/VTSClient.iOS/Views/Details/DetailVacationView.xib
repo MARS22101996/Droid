@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailVacationView">
+            <connections>
+                <outlet property="DatePickerBar" destination="7pQ-Lh-GKl" id="MIt-on-5H4"/>
+                <outlet property="DatePickerToolbar" destination="7pQ-Lh-GKl" id="qQY-df-hy7"/>
+                <outlet property="DatePickerVacation" destination="hf4-JF-52I" id="527-gd-OK7"/>
+                <outlet property="DateToolBar" destination="ecn-c1-b7b" id="Jgk-Wh-TvL"/>
+                <outlet property="DoneButton" destination="mIM-ki-j2R" id="puM-RE-dfP"/>
+                <outlet property="EndDay" destination="I7F-zT-yyX" id="name-outlet-I7F-zT-yyX"/>
+                <outlet property="EndMonth" destination="PZO-Lv-tyE" id="name-outlet-PZO-Lv-tyE"/>
+                <outlet property="EndYear" destination="Izo-C7-SaF" id="name-outlet-Izo-C7-SaF"/>
+                <outlet property="Page" destination="5fi-uE-gBb" id="name-outlet-5fi-uE-gBb"/>
+                <outlet property="PageImage" destination="GLJ-Gr-YVh" id="name-outlet-GLJ-Gr-YVh"/>
+                <outlet property="StartDay" destination="Ul5-aU-X43" id="name-outlet-Ul5-aU-X43"/>
+                <outlet property="StartMonth" destination="TLS-Z9-qY3" id="name-outlet-TLS-Z9-qY3"/>
+                <outlet property="StartYear" destination="kUP-7u-zYN" id="name-outlet-kUP-7u-zYN"/>
+                <outlet property="StatusSegment" destination="iYy-3L-vNe" id="hes-cs-pJx"/>
+                <outlet property="TypeImageView" destination="93x-nV-AlN" id="name-outlet-93x-nV-AlN"/>
+                <outlet property="TypeText" destination="nSU-4F-Y1V" id="name-outlet-nSU-4F-Y1V"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93x-nV-AlN">
+                    <rect key="frame" x="16" y="20" width="343" height="297"/>
+                    <subviews>
+                        <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="Page" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="5fi-uE-gBb">
+                            <rect key="frame" x="90" y="257" width="163" height="37"/>
+                            <color key="pageIndicatorTintColor" red="0.23137254900000001" green="0.76862745099999996" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="currentPageIndicatorTintColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </pageControl>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Regular" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSU-4F-Y1V">
+                            <rect key="frame" x="20" y="233" width="303" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLJ-Gr-YVh">
+                            <rect key="frame" x="30" y="40" width="283" height="177"/>
+                            <gestureRecognizers/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="nSU-4F-Y1V" secondAttribute="trailing" constant="20" id="3jb-0Z-r4O"/>
+                        <constraint firstItem="nSU-4F-Y1V" firstAttribute="top" secondItem="GLJ-Gr-YVh" secondAttribute="bottom" constant="16" id="497-D9-8D1"/>
+                        <constraint firstAttribute="bottom" secondItem="GLJ-Gr-YVh" secondAttribute="bottom" constant="80" id="M7E-jZ-pkc"/>
+                        <constraint firstAttribute="trailing" secondItem="5fi-uE-gBb" secondAttribute="trailing" constant="90" id="NZX-kO-7je"/>
+                        <constraint firstItem="nSU-4F-Y1V" firstAttribute="leading" secondItem="93x-nV-AlN" secondAttribute="leading" constant="20" id="SeF-OX-zow"/>
+                        <constraint firstItem="5fi-uE-gBb" firstAttribute="top" secondItem="GLJ-Gr-YVh" secondAttribute="bottom" constant="40" id="Zpj-tD-um9"/>
+                        <constraint firstItem="GLJ-Gr-YVh" firstAttribute="leading" secondItem="93x-nV-AlN" secondAttribute="leading" constant="30" id="aEB-R1-21N"/>
+                        <constraint firstItem="5fi-uE-gBb" firstAttribute="leading" secondItem="93x-nV-AlN" secondAttribute="leading" constant="90" id="b4V-55-AW6"/>
+                        <constraint firstItem="GLJ-Gr-YVh" firstAttribute="top" secondItem="93x-nV-AlN" secondAttribute="top" constant="40" id="ee2-yk-tB9"/>
+                        <constraint firstAttribute="trailing" secondItem="GLJ-Gr-YVh" secondAttribute="trailing" constant="30" id="oS0-wk-ewD"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ul5-aU-X43">
+                    <rect key="frame" x="16" y="347" width="60" height="83"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="6v8-tO-GMU"/>
+                        <constraint firstAttribute="height" constant="83" id="ccb-Hm-77c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                    <state key="normal" title="28">
+                        <color key="titleColor" red="0.23137254900000001" green="0.76862745099999996" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLS-Z9-qY3">
+                    <rect key="frame" x="76" y="347" width="85" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="Mr3-7l-95c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <state key="normal" title="MAR">
+                        <color key="titleColor" red="0.23137254900000001" green="0.76862745099999996" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="UIButtonTLSZ9qY3_TouchUpInside:" destination="-1" eventType="touchUpInside" id="7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUP-7u-zYN">
+                    <rect key="frame" x="76" y="387" width="85" height="43"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="2017">
+                        <color key="titleColor" red="0.23137254900000001" green="0.76862745099999996" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7F-zT-yyX">
+                    <rect key="frame" x="161" y="347" width="65" height="83"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="axH-DZ-Lqr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                    <state key="normal" title="31">
+                        <color key="titleColor" red="0.62745098040000002" green="0.80000000000000004" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZO-Lv-tyE">
+                    <rect key="frame" x="226" y="347" width="100" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="FDl-I6-TJR"/>
+                        <constraint firstAttribute="height" constant="38" id="SYM-LH-tF3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <state key="normal" title="MAR">
+                        <color key="titleColor" red="0.62745098040000002" green="0.80000000000000004" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izo-C7-SaF">
+                    <rect key="frame" x="226" y="385" width="101" height="45"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="2017">
+                        <color key="titleColor" red="0.62745098040000002" green="0.80000000000000004" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iYy-3L-vNe">
+                    <rect key="frame" x="114" y="453" width="147" height="29"/>
+                    <segments>
+                        <segment title="Approved"/>
+                        <segment title="Closed"/>
+                    </segments>
+                    <color key="tintColor" red="0.62745098040000002" green="0.80000000000000004" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </segmentedControl>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="hf4-JF-52I">
+                    <rect key="frame" x="0.0" y="517" width="383" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="jjv-DK-rSc"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="524422701.42658502">
+                        <!--2017-08-14 16:58:21 +0000-->
+                    </date>
+                </datePicker>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pQ-Lh-GKl">
+                    <rect key="frame" x="0.0" y="481" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="Cancel" id="ecn-c1-b7b">
+                            <connections>
+                                <action selector="CancelButton:" destination="-1" id="Fwc-ym-l2g"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="8W7-HO-9Au"/>
+                        <barButtonItem title="Done" id="mIM-ki-j2R">
+                            <connections>
+                                <action selector="DoneButtonChoose:" destination="-1" id="YlR-ca-Vty"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="PZO-Lv-tyE" firstAttribute="top" secondItem="93x-nV-AlN" secondAttribute="bottom" constant="30" id="326-xA-nVs"/>
+                <constraint firstItem="Ul5-aU-X43" firstAttribute="bottom" secondItem="Izo-C7-SaF" secondAttribute="bottom" id="6Kt-jq-Tgr"/>
+                <constraint firstItem="TLS-Z9-qY3" firstAttribute="leading" secondItem="kUP-7u-zYN" secondAttribute="leading" id="8CX-9x-JfA"/>
+                <constraint firstItem="Izo-C7-SaF" firstAttribute="leading" secondItem="I7F-zT-yyX" secondAttribute="trailing" id="996-ap-Eta"/>
+                <constraint firstItem="PZO-Lv-tyE" firstAttribute="top" secondItem="93x-nV-AlN" secondAttribute="bottom" constant="30" id="BLy-ah-byu"/>
+                <constraint firstAttribute="trailingMargin" secondItem="93x-nV-AlN" secondAttribute="trailing" id="CYp-qk-gCO"/>
+                <constraint firstItem="Izo-C7-SaF" firstAttribute="top" secondItem="PZO-Lv-tyE" secondAttribute="bottom" id="DOY-wZ-jvN"/>
+                <constraint firstItem="PZO-Lv-tyE" firstAttribute="top" secondItem="I7F-zT-yyX" secondAttribute="top" id="Egd-6Z-Lre"/>
+                <constraint firstItem="I7F-zT-yyX" firstAttribute="leading" secondItem="kUP-7u-zYN" secondAttribute="trailing" id="FXp-0d-JdU"/>
+                <constraint firstItem="hf4-JF-52I" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="HES-Lk-0yz"/>
+                <constraint firstItem="TLS-Z9-qY3" firstAttribute="trailing" secondItem="kUP-7u-zYN" secondAttribute="trailing" id="K8f-mN-FhD"/>
+                <constraint firstItem="PZO-Lv-tyE" firstAttribute="leading" secondItem="I7F-zT-yyX" secondAttribute="trailing" id="KC3-cP-btl"/>
+                <constraint firstItem="hf4-JF-52I" firstAttribute="centerX" secondItem="iYy-3L-vNe" secondAttribute="centerX" id="LwF-MW-PzV"/>
+                <constraint firstItem="93x-nV-AlN" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="16" id="NHj-9q-J21"/>
+                <constraint firstItem="PZO-Lv-tyE" firstAttribute="top" secondItem="Ul5-aU-X43" secondAttribute="top" id="Nwn-OX-ctS"/>
+                <constraint firstItem="PZO-Lv-tyE" firstAttribute="top" secondItem="TLS-Z9-qY3" secondAttribute="top" id="QnF-nq-NhH"/>
+                <constraint firstItem="TLS-Z9-qY3" firstAttribute="leading" secondItem="Ul5-aU-X43" secondAttribute="trailing" id="XgD-Jd-ys2"/>
+                <constraint firstItem="Ul5-aU-X43" firstAttribute="bottom" secondItem="I7F-zT-yyX" secondAttribute="bottom" id="YWl-4y-QIs"/>
+                <constraint firstItem="hf4-JF-52I" firstAttribute="centerX" secondItem="93x-nV-AlN" secondAttribute="centerX" id="bC3-EX-Y2U"/>
+                <constraint firstItem="iYy-3L-vNe" firstAttribute="top" secondItem="Izo-C7-SaF" secondAttribute="bottom" constant="23" id="bZR-nK-l7b"/>
+                <constraint firstItem="PZO-Lv-tyE" firstAttribute="centerX" secondItem="Izo-C7-SaF" secondAttribute="centerX" id="cMT-iw-1IP"/>
+                <constraint firstItem="Izo-C7-SaF" firstAttribute="leading" secondItem="I7F-zT-yyX" secondAttribute="trailing" id="f4H-43-AIi"/>
+                <constraint firstItem="93x-nV-AlN" firstAttribute="top" secondItem="2" secondAttribute="top" constant="20" id="g6H-fK-Ecg"/>
+                <constraint firstItem="93x-nV-AlN" firstAttribute="leading" secondItem="Ul5-aU-X43" secondAttribute="leading" id="jn8-Xx-Zwl"/>
+                <constraint firstItem="kUP-7u-zYN" firstAttribute="top" secondItem="TLS-Z9-qY3" secondAttribute="bottom" id="lJP-Cd-Hbz"/>
+                <constraint firstItem="PZO-Lv-tyE" firstAttribute="top" secondItem="93x-nV-AlN" secondAttribute="bottom" constant="30" id="n1y-LO-csQ"/>
+                <constraint firstItem="Ul5-aU-X43" firstAttribute="bottom" secondItem="kUP-7u-zYN" secondAttribute="bottom" id="obD-Xf-pib"/>
+                <constraint firstAttribute="bottom" secondItem="hf4-JF-52I" secondAttribute="bottom" id="ow0-gP-LjR"/>
+                <constraint firstAttribute="bottom" secondItem="93x-nV-AlN" secondAttribute="bottom" constant="350" id="zRS-R5-pIm"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="A1w-p8-1aO" appends="YES" id="kqT-FX-koQ"/>
+                <outletCollection property="gestureRecognizers" destination="A1w-p8-1aO" appends="YES" id="JjY-lm-PVr"/>
+                <outletCollection property="gestureRecognizers" destination="A1w-p8-1aO" appends="YES" id="r5D-ib-LdQ"/>
+                <outletCollection property="gestureRecognizers" destination="A1w-p8-1aO" appends="YES" id="sQr-1Q-0Lm"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="bOy-RU-xrE">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <date key="date" timeIntervalSinceReferenceDate="524423648.98479903">
+                <!--2017-08-14 17:14:08 +0000-->
+            </date>
+        </datePicker>
+        <swipeGestureRecognizer cancelsTouchesInView="NO" direction="right" id="H0d-9T-CvD">
+            <connections>
+                <action selector="ActionRight:" destination="-1" id="f7V-Wz-e6G"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer cancelsTouchesInView="NO" direction="left" id="A1w-p8-1aO">
+            <connections>
+                <action selector="ActionLeft:" destination="-1" id="oLi-a4-Cyf"/>
+            </connections>
+        </swipeGestureRecognizer>
+    </objects>
+</document>
