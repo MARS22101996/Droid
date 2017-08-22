@@ -13,7 +13,7 @@
 
 		public static string GetAccountUrl()
 		{
-			const string hostUrl = "http://localhost:5002";
+			const string hostUrl = "http://10.23.21.239:5002";
 
 			const string vacationUrl = hostUrl + "/vts/signin";
 

@@ -1,10 +1,7 @@
 ﻿﻿using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
-using VTSClient.Bll.Services;
-using VTSClient.BLL.Dto;
+ using VTSClient.BLL.Dto;
 using VTSClient.BLL.Interfaces;
-using VTSClient.Core.Infrastructure.Automapper;
-using VTSClient.DAL.Repositories;
 
 namespace VTSClient.Core.ViewModels
 {
@@ -60,7 +57,7 @@ namespace VTSClient.Core.ViewModels
 
 				                                    if (!status) return;
 
-				                                    ShowViewModel<MenuViewModel>();
+				                                    //ShowViewModel<MenuViewModel>();
 			                                    }));
 
 		private bool IsFieldsCorrect()
