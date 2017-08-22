@@ -11,7 +11,7 @@ namespace VTSClient.Droid.Activities
 	   MainLauncher = true,
 	   NoHistory = true,
 	   Theme = "@style/MyTheme.Splash")]
-	public class SplashActivity : MvxSplashScreenActivity
+	public class SplashActivity : AppCompatActivity
 	{
 		public SplashActivity()
 		{
@@ -20,6 +20,8 @@ namespace VTSClient.Droid.Activities
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
+
+			StartActivity(new Intent(this, typeof(MainScreenActivity)));
 		}
 	}
 }
