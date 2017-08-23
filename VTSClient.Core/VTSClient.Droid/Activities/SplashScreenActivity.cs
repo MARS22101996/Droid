@@ -1,7 +1,5 @@
 using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Support.V7.App;
 using MvvmCross.Droid.Views;
 
 namespace VTSClient.Droid.Activities
@@ -11,7 +9,7 @@ namespace VTSClient.Droid.Activities
 	   MainLauncher = true,
 	   NoHistory = true,
 	   Theme = "@style/MyTheme.Splash")]
-	public class SplashActivity : AppCompatActivity
+	public class SplashActivity : MvxSplashScreenActivity
 	{
 		public SplashActivity()
 		{
@@ -21,7 +19,7 @@ namespace VTSClient.Droid.Activities
 		{
 			base.OnCreate(savedInstanceState);
 
-			StartActivity(new Intent(this, typeof(MainScreenActivity)));
+			//StartActivity(new Intent(this, typeof(MainScreenActivity)));
 		}
 	}
 }

@@ -30,6 +30,7 @@ namespace VTSClient.Droid.Activities
 
 			ApplyBindings();
 		}
+
 		private void ApplyBindings()
 		{
 			var bindingSet = this.CreateBindingSet<LoginView, LoginPageViewModel>();

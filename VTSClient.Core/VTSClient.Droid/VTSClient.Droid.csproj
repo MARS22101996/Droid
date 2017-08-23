@@ -143,15 +143,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\LoginView.cs" />
-    <Compile Include="Activities\MainScreenActivity.cs" />
+    <Compile Include="Activities\MainView.cs" />
     <Compile Include="Activities\SplashScreenActivity.cs" />
+    <Compile Include="Adapters\Mvx\VacationMvxAdapter.cs" />
     <Compile Include="Adapters\TypesAdapter.cs" />
     <Compile Include="Adapters\VacationsAdapter.cs" />
     <Compile Include="Autofac\AutofacSetting.cs" />
-    <Compile Include="Fragments\AllFragment.cs" />
-    <Compile Include="Fragments\ClosedFragment.cs" />
     <Compile Include="Fragments\FilterFragment.cs" />
-    <Compile Include="Fragments\OpenFragment.cs" />
+    <Compile Include="Fragments\MVx\FilteringFragment.cs" />
     <Compile Include="Fragments\VacationTypeFragment.cs" />
     <Compile Include="Infrastracture\DatePickerFragment.cs" />
     <Compile Include="Infrastracture\VacationTypeSetting.cs" />
@@ -168,12 +167,11 @@
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\SplashScreenView.axml" />
     <AndroidResource Include="Resources\layout\LoginView.axml" />
-    <AndroidResource Include="Resources\layout\DetailsView.axml" />
-    <AndroidResource Include="Resources\layout\ListViewMenuRow.axml" />
     <AndroidResource Include="Resources\layout\MainListView.axml" />
     <AndroidResource Include="Resources\layout\TypeRow.axml" />
     <AndroidResource Include="Resources\layout\UserInfo.axml" />
     <AndroidResource Include="Resources\layout\VacationRow.axml" />
+    <AndroidResource Include="Resources\layout\ListViewMenuRow.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
