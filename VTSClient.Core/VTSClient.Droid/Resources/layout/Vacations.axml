@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:elevation="2dp"
+    android:background="@color/white">
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:paddingLeft="16dp"
+      android:paddingRight="12dp"
+      android:id="@+id/countryLayout"
+      android:minHeight="40dp">
+    <TextView
+        android:text="UNITED STATES"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/countryNameText"
+        android:fontFamily="Oswald-Regular"
+        android:textColor="@color/brownish_grey"
+        android:textSize="12sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="6dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconNextCountry"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/ic_next_country" />
+  </LinearLayout>
+  <TextView
+      android:text="Text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/countryPagerText"
+      android:fontFamily="Oswald"
+      android:textSize="10.7sp"
+      android:textColor="@color/warm_grey"
+      android:paddingStart="16dp"
+      android:paddingBottom="12dp"
+      android:paddingTop="8dp" />
+</LinearLayout>

@@ -3,4 +3,18 @@
   <color name="white_back">#FFFFFF</color>
   <color name="blue">#3BC4D6</color>
   <color name="green">#A0CC4B</color>
+  <item name="white" type="color">#FFFFFF</item>
+  <item name="white_two" type="color">#F5F5F5</item>
+  <item name="warm_grey" type="color">#999999</item>
+  <item name="tealish" type="color">#39c2d7</item>
+  <item name="darkish_pink" type="color">#e4445f</item>
+  <item name="brownish_grey" type="color">#666666</item>
+  <integer-array name="androidcolors">
+    <item>@color/white</item>
+    <item>@color/white_two</item>
+    <item>@color/warm_grey</item>
+    <item>@color/tealish</item>
+    <item>@color/darkish_pink</item>
+    <item>@color/brownish_grey</item>
+  </integer-array>
 </resources>

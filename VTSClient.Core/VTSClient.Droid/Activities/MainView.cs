@@ -1,19 +1,20 @@
 using Android.App;
-using Android.Runtime;
 using Android.Support.V4.Widget;
+using Android.Support.V7.Widget;
 using Android.Widget;
-using MvvmCross.Droid.Support.V4;
+using MvvmCross.Binding.BindingContext;
+using MvvmCross.Binding.Droid.BindingContext;
+using MvvmCross.Droid.Support.V7.AppCompat;
+using MvvmCross.Droid.Support.V7.RecyclerView;
 using MvvmCross.Droid.Views;
 using VTSClient.Core.ViewModels;
-using VTSClient.DAL.Enums;
-using VTSClient.Droid.Fragments;
-using VTSClient.Droid.Fragments.MVx;
+using VTSClient.Droid.Adapters;
 using ActionBarDrawerToggle = Android.Support.V7.App.ActionBarDrawerToggle;
 
 namespace VTSClient.Droid.Activities
 {
 	[Activity(Label = "Vacations", Theme = "@style/MyTheme.Main", MainLauncher = false, Icon = "@drawable/icon")]
-	public class MainView : MvxActivity<MenuViewModel>
+	public class MainView : MvxAppCompatActivity<VacationViewModel>
 	{
 		ActionBarDrawerToggle _drawerToggle;
 
@@ -23,9 +24,9 @@ namespace VTSClient.Droid.Activities
 
 		private ListView _drawerListView;
 
-		private MvxFragment [] _fragments;
+		private MvxRecyclerView _contriesRecyclerView;
 
-		private Android.Support.V7.Widget.ListViewCompat _vacationList;
+		private CountriesAdapter _countriesAdapter;
 
 		protected override void OnViewModelSet()
 		{
@@ -35,7 +36,13 @@ namespace VTSClient.Droid.Activities
 
 			_drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawerLayout);
 
-			//_vacationList = FindViewById<ListView>(Resource.Id.);
+			_contriesRecyclerView = FindViewById<MvxRecyclerView>(Resource.Id.countriesView);
+
+			_countriesAdapter = new CountriesAdapter((IMvxAndroidBindingContext)this.BindingContext);
+
+			_contriesRecyclerView.Adapter = _countriesAdapter;
+
+			_contriesRecyclerView.SetLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.Vertical, false));
 
 			_drawerToggle = new ActionBarDrawerToggle(this, _drawerLayout, Resource.String.DrawerOpenDescription,
 				Resource.String.DrawerCloseDescription);
@@ -43,6 +50,8 @@ namespace VTSClient.Droid.Activities
 			_drawerLayout.SetDrawerListener(_drawerToggle);
 
 			SetDrawerListView();
+
+			ApplyBindings();
 		}
 
 		private void SetDrawerListView()
@@ -59,6 +68,19 @@ namespace VTSClient.Droid.Activities
 				Resource.Id.menuRowTextView, _titles);
 
 			_drawerListView.SetItemChecked(0, true);
+		}
+
+		private void ApplyBindings()
+		{
+			var bindingSet = this.CreateBindingSet<MainView, VacationViewModel>();
+
+			bindingSet.Bind(_countriesAdapter)
+				.For(x => x.ItemsSource)
+				.To(x => x.Vacations);
+
+			bindingSet.Apply();
+
+			_countriesAdapter.NotifyDataSetChanged();
 		}
 	}
 }

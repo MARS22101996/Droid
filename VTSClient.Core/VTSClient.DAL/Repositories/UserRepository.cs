@@ -28,7 +28,7 @@ namespace VTSClient.DAL.Repositories
 
 			var content = new StringContent(loginJson, Encoding.UTF8, "application/json");
 
-			var request = new HttpRequestMessage()
+			var request = new HttpRequestMessage
 			{
 				RequestUri = new Uri(UrlName.GetAccountUrl()),
 				Method = HttpMethod.Post,
