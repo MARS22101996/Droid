@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:elevation="2dp"
+    android:background="@color/white">
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/segmentName"
+      android:text="--name--"
+      android:fontFamily="Oswald"
+      android:textSize="10.7sp"
+      android:textColor="@color/warm_grey"
+      android:paddingStart="16dp"
+      android:paddingBottom="12dp"
+      android:paddingTop="8dp" />
+</LinearLayout>

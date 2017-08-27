@@ -8,9 +8,10 @@ namespace VTSClient.Core
 		, IMvxAppStart
 	{
 		public void Start(object hint = null)
-		{					
+		{
 			//ShowViewModel<LoginPageViewModel>();
-			ShowViewModel<VacationViewModel>();
+			//ShowViewModel<VacationViewModel>();
+			ShowViewModel<MenuViewModel>();
 		}
 	}
 }

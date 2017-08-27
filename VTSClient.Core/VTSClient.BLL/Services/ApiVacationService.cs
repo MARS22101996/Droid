@@ -38,9 +38,12 @@ namespace VTSClient.BLL.Services
 			switch (type)
 			{
 				case FilterEnum.Closed:
-					return Mapper.Map<IEnumerable<VacationDto>>(vacations.Where(x => x.VacationStatus == VacationStatus.Closed));
-
+				{
+					var result = Mapper.Map<IEnumerable<VacationDto>>(vacations.Where(x => x.VacationStatus == VacationStatus.Closed));
+					return result;
+				}
 				case FilterEnum.Opened:
+
 					return Mapper.Map<IEnumerable<VacationDto>>(vacations.Where(x => x.VacationStatus != VacationStatus.Closed));
 
 				default:

@@ -14,7 +14,7 @@ using ActionBarDrawerToggle = Android.Support.V7.App.ActionBarDrawerToggle;
 namespace VTSClient.Droid.Activities
 {
 	[Activity(Label = "Vacations", Theme = "@style/MyTheme.Main", MainLauncher = false, Icon = "@drawable/icon")]
-	public class MainView : MvxAppCompatActivity<VacationViewModel>
+	public class VacationsView : MvxAppCompatActivity<VacationViewModel>
 	{
 		ActionBarDrawerToggle _drawerToggle;
 
@@ -72,7 +72,7 @@ namespace VTSClient.Droid.Activities
 
 		private void ApplyBindings()
 		{
-			var bindingSet = this.CreateBindingSet<MainView, VacationViewModel>();
+			var bindingSet = this.CreateBindingSet<VacationsView, VacationViewModel>();
 
 			bindingSet.Bind(_vacationsAdapter)
 				.For(x => x.ItemsSource)

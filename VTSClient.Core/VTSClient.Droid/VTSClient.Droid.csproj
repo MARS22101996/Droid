@@ -153,8 +153,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\LoginView.cs" />
-    <Compile Include="Activities\MainView.cs" />
+    <Compile Include="Activities\MenuView.cs" />
+    <Compile Include="Activities\VacationsView.cs" />
     <Compile Include="Activities\SplashScreenActivity.cs" />
+    <Compile Include="Adapters\SegmentAdapter.cs" />
     <Compile Include="Adapters\VacationsAdapter.cs" />
     <Compile Include="Autofac\AutofacSetting.cs" />
     <Compile Include="Fragments\FilterFragment.cs" />
@@ -165,6 +167,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\VacationTypeSetting.cs" />
     <Compile Include="Setup.cs" />
+    <Compile Include="ViewHolders\SegmentItemViewHolder.cs" />
     <Compile Include="ViewHolders\VacationItemViewHolder.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +186,10 @@
     <AndroidResource Include="Resources\layout\Vacations.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\Menu.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Segment.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
