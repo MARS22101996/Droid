@@ -6,10 +6,10 @@ using VTSClient.Droid.ViewHolders;
 
 namespace VTSClient.Droid.Adapters
 {
-	public class CountriesAdapter : MvxRecyclerAdapter
+	public class VacationsAdapter : MvxRecyclerAdapter
 	{
 		private IMvxAndroidBindingContext _context;
-		public CountriesAdapter(IMvxAndroidBindingContext bindingContext)
+		public VacationsAdapter(IMvxAndroidBindingContext bindingContext)
 		: base(bindingContext)
 		{
 			_context = bindingContext;
@@ -18,8 +18,10 @@ namespace VTSClient.Droid.Adapters
 		public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
 		{
 			var itemBindingContext = new MvxAndroidBindingContext(parent.Context, BindingContext.LayoutInflaterHolder);
-			var view = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.countries, parent, false);
-			return new CountryItemViewHolder(view, itemBindingContext);
+
+			var view = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.VacationRow, parent, false);
+
+			return new VacationItemViewHolder(view, itemBindingContext);
 		}
 	}
 }

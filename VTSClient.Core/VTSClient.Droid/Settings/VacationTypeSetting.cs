@@ -2,7 +2,7 @@ using Android.Support.V4.App;
 using Android.Widget;
 using VTSClient.DAL.Enums;
 
-namespace VTSClient.Droid.Infrastracture
+namespace VTSClient.Droid.Settings
 {
     public static class VacationTypeSetting
     {
@@ -16,17 +16,17 @@ namespace VTSClient.Droid.Infrastracture
         //    Resource.Id.buttonInd6
         //};
 
-        public static int GetPicture(VacationType type)
+        public static int GetPicture(string type)
         {
             switch (type)
             {
-                case VacationType.Regular:
+                case "Regular":
                     return Resource.Drawable.Icon_Request_Green;
-                case VacationType.Exceptional:
+                case "Exceptional":
                     return Resource.Drawable.Icon_Request_Gray;
-                case VacationType.Sick:
+                case"Sick":
                     return Resource.Drawable.Icon_Request_Plum;
-                case VacationType.Overtime:
+                case "Overtime":
                     return Resource.Drawable.Icon_Request_Blue;
                 default:
                     return Resource.Drawable.Icon_Request_Dark;

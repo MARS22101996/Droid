@@ -26,7 +26,7 @@ namespace VTSClient.Droid.Activities
 
 		private MvxRecyclerView _contriesRecyclerView;
 
-		private CountriesAdapter _countriesAdapter;
+		private VacationsAdapter _vacationsAdapter;
 
 		protected override void OnViewModelSet()
 		{
@@ -38,9 +38,9 @@ namespace VTSClient.Droid.Activities
 
 			_contriesRecyclerView = FindViewById<MvxRecyclerView>(Resource.Id.countriesView);
 
-			_countriesAdapter = new CountriesAdapter((IMvxAndroidBindingContext)this.BindingContext);
+			_vacationsAdapter = new VacationsAdapter((IMvxAndroidBindingContext)this.BindingContext);
 
-			_contriesRecyclerView.Adapter = _countriesAdapter;
+			_contriesRecyclerView.Adapter = _vacationsAdapter;
 
 			_contriesRecyclerView.SetLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.Vertical, false));
 
@@ -74,13 +74,13 @@ namespace VTSClient.Droid.Activities
 		{
 			var bindingSet = this.CreateBindingSet<MainView, VacationViewModel>();
 
-			bindingSet.Bind(_countriesAdapter)
+			bindingSet.Bind(_vacationsAdapter)
 				.For(x => x.ItemsSource)
 				.To(x => x.Vacations);
 
 			bindingSet.Apply();
 
-			_countriesAdapter.NotifyDataSetChanged();
+			_vacationsAdapter.NotifyDataSetChanged();
 		}
 	}
 }

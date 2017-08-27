@@ -1,45 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:id="@+id/vacationRow"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
     android:minWidth="25px"
-    android:minHeight="25px"
-    android:paddingBottom="4dp">
+    android:minHeight="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout1">
     <ImageView
-        android:id="@+id/pictureImageView"
+        android:id="@+id/vacationImg"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:padding="5dp" />
     <TextView
-        android:id="@+id/durationTextView"
-        android:layout_toRightOf="@id/pictureImageView"
-        android:text="--name--"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/vacationDate"
+        android:textColor="#2ec2d9"
+        android:layout_toRightOf="@+id/vacationImg"
+        android:layout_toLeftOf="@+id/vacationStatus"
+        android:text="--date--"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="5dp" />
     <TextView
-        android:id="@+id/typeTextView"
-        android:layout_toRightOf="@id/pictureImageView"
-        android:layout_below="@id/durationTextView"
-        android:text="--type--"
+        android:id="@+id/vacationType"
+        android:layout_toRightOf="@+id/vacationImg"
+        android:layout_below="@+id/vacationDate"
+        android:layout_toLeftOf="@+id/vacationStatus"
+        android:text="--vacation type--"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="5dp" />
     <TextView
-        android:id="@+id/statusTextView"
+        android:id="@+id/vacationStatus"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_width="80dp"
+        android:layout_width="100dp"
         android:text="--status--"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_height="wrap_content"
-        android:paddingRight="15dp" />
+        android:paddingRight="3dp" />
     <TextView
         android:id="@+id/ToDetails"
         android:layout_alignParentRight="true"
