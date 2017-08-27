@@ -18,8 +18,6 @@ namespace VTSClient.Droid.Activities
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
-
-			//StartActivity(new Intent(this, typeof(MainScreenActivity)));
 		}
 	}
 }

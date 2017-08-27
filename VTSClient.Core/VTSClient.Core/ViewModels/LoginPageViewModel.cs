@@ -57,7 +57,7 @@ namespace VTSClient.Core.ViewModels
 
 				                                    if (!status) return;
 
-				                                    //ShowViewModel<MenuViewModel>();
+				                                   ShowViewModel<MenuViewModel>();
 			                                    }));
 
 		private bool IsFieldsCorrect()

@@ -159,9 +159,6 @@
     <Compile Include="Adapters\SegmentAdapter.cs" />
     <Compile Include="Adapters\VacationsAdapter.cs" />
     <Compile Include="Autofac\AutofacSetting.cs" />
-    <Compile Include="Fragments\FilterFragment.cs" />
-    <Compile Include="Fragments\MVx\FilteringFragment.cs" />
-    <Compile Include="Fragments\VacationTypeFragment.cs" />
     <Compile Include="Infrastracture\DatePickerFragment.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

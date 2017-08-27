@@ -9,9 +9,9 @@ namespace VTSClient.Core
 	{
 		public void Start(object hint = null)
 		{
-			//ShowViewModel<LoginPageViewModel>();
+			ShowViewModel<LoginPageViewModel>();
 			//ShowViewModel<VacationViewModel>();
-			ShowViewModel<MenuViewModel>();
+			//ShowViewModel<MenuViewModel>();
 		}
 	}
 }

@@ -6,11 +6,13 @@
     android:background="@drawable/login_bg">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="83.5dp"
+        android:layout_height="60.5dp"
         android:id="@+id/errorText"
+        android:background="@color/background_floating_material_light"
         android:layout_marginRight="60.5dp"
         android:layout_marginLeft="62.5dp"
-        android:layout_marginBottom="40.5dp" />
+        android:layout_marginTop="20.5dp"
+        android:layout_marginBottom="0.5dp" />
     <EditText
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="@dimen/abc_panel_menu_list_width"
@@ -19,7 +21,8 @@
         android:layout_gravity="center"
         android:background="@color/background_floating_material_light"
         android:textColor="@color/background_floating_material_dark"
-        android:layout_marginBottom="13.5dp"
+        android:layout_marginTop="100.5dp"
+        android:layout_marginBottom="15.5dp"
         android:textStyle="normal"
         android:textAlignment="center"
         android:inputType="text"
@@ -33,7 +36,7 @@
         android:layout_gravity="center"
         android:background="@color/background_floating_material_light"
         android:textColor="@color/background_floating_material_dark"
-        android:layout_marginBottom="13.5dp"
+        android:layout_marginBottom="15.5dp"
         android:textStyle="normal"
         android:textAlignment="center"
         android:hint="Password"
