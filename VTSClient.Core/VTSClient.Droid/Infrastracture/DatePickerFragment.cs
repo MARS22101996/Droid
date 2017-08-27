@@ -26,15 +26,20 @@ namespace VTSClient.Droid.Infrastracture
         public override Dialog OnCreateDialog(Bundle savedInstanceState)
         {
             var currently = DateTime.Now;
-            var dialog = new DatePickerDialog(Activity,
-                this,
-                currently.Year,
-                currently.Month,
-                currently.Day);
+	        var dialog = new DatePickerDialog(Activity,
+		        this,
+		        currently.Year,
+		        currently.Month,
+		        currently.Day)
+	        {
+		        DatePicker =
+		        {
+			        CalendarViewShown = true,
+			        SpinnersShown = false
+		        }
+	        };
 
-            dialog.DatePicker.CalendarViewShown = true;
-            dialog.DatePicker.SpinnersShown = false;
-            return dialog;
+	        return dialog;
         }
 
         public void OnDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth)

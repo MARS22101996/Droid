@@ -6,17 +6,17 @@ namespace VTSClient.Droid.Settings
 {
     public static class VacationTypeSetting
     {
-        //private static int[] _buttons =
-        //{
-        //    Resource.Id.buttonInd1,
-        //    Resource.Id.buttonInd2,
-        //    Resource.Id.buttonInd3,
-        //    Resource.Id.buttonInd4,
-        //    Resource.Id.buttonInd5,
-        //    Resource.Id.buttonInd6
-        //};
+		private static int[] _buttons =
+		{
+			Resource.Id.buttonInd1,
+			Resource.Id.buttonInd2,
+			Resource.Id.buttonInd3,
+			Resource.Id.buttonInd4,
+			Resource.Id.buttonInd5,
+			Resource.Id.buttonInd6
+		};
 
-        public static int GetPicture(string type)
+		public static int GetPicture(string type)
         {
             switch (type)
             {
@@ -71,16 +71,16 @@ namespace VTSClient.Droid.Settings
             }
         }
 
-        //public static void SetButtonsColor(FragmentActivity context, int id)
-        //{
-        //    foreach (var item in _buttons)
-        //    {
-        //        var element = context.FindViewById<ImageView>(item);
-        //        element.SetBackgroundResource(Resource.Drawable.uncheckedButton);
-        //    }
- 
-        //    var indexer = context.FindViewById<ImageView>(_buttons[id]);
-        //    indexer.SetBackgroundResource(Resource.Drawable.checkedButton);
-        //}
-    }
+		public static void SetButtonsColor(FragmentActivity context, int id)
+		{
+			foreach (var item in _buttons)
+			{
+				var element = context.FindViewById<ImageView>(item);
+				element.SetBackgroundResource(Resource.Drawable.uncheckedButton);
+			}
+
+			var indexer = context.FindViewById<ImageView>(_buttons[id]);
+			indexer.SetBackgroundResource(Resource.Drawable.checkedButton);
+		}
+	}
 }
