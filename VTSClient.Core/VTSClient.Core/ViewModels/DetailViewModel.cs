@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Globalization;
-using System.Linq;
 using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
 using VTSClient.BLL.Dto;
 using VTSClient.BLL.Interfaces;
-using VTSClient.BLL.Services;
-using VTSClient.Core.Infrastructure.Automapper;
 using VTSClient.Core.Infrastructure.Extentions;
 using VTSClient.Core.Models;
 using VTSClient.DAL.Enums;
-using VTSClient.DAL.Repositories;
 
 namespace VTSClient.Core.ViewModels
 {

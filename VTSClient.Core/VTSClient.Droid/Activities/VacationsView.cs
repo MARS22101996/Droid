@@ -16,14 +16,8 @@ namespace VTSClient.Droid.Activities
 	[Activity(Label = "Vacations", Theme = "@style/MyTheme.Main", MainLauncher = false, Icon = "@drawable/icon")]
 	public class VacationsView : MvxAppCompatActivity<VacationViewModel>
 	{
-		ActionBarDrawerToggle _drawerToggle;
-
-		private readonly string[] _titles = { "All", "Opened", "Closed" };
-
 		private DrawerLayout _drawerLayout;
-
-		private ListView _drawerListView;
-
+	
 		private MvxRecyclerView _contriesRecyclerView;
 
 		private VacationsAdapter _vacationsAdapter;

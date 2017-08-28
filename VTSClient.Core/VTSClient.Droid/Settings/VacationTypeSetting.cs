@@ -33,44 +33,6 @@ namespace VTSClient.Droid.Settings
             }
         }
 
-        public static int GetPosition(VacationType type)
-        {
-            switch (type)
-            {
-                case VacationType.Regular:
-                    return 1;
-                case VacationType.Sick:
-                    return 2;
-                case VacationType.Exceptional:
-                    return 3;
-                case VacationType.LeaveWithoutPay:
-                    return 4;
-                case VacationType.Overtime:
-                    return 5;
-                default:
-                    return 0;
-            }
-        }
-
-        public static VacationType GetType(int position)
-        {
-            switch (position)
-            {
-                case 0:
-                    return VacationType.Undefined;
-                case 1:
-                    return VacationType.Regular;
-                case 2:
-                    return VacationType.Sick;
-                case 3:
-                    return VacationType.Exceptional;
-                case 4:
-                    return VacationType.LeaveWithoutPay;
-                default:
-                    return VacationType.Overtime;
-            }
-        }
-
 		public static void SetButtonsColor(FragmentActivity context, int id)
 		{
 			foreach (var item in _buttons)
