@@ -186,7 +186,7 @@ namespace VTSClient.Core.ViewModels
 			}
 		}
 
-		private string _position = "";
+		private string _position = "1";
 
 		public string Position
 		{
@@ -282,6 +282,10 @@ namespace VTSClient.Core.ViewModels
 			else
 			{
 				Vacation = await _vacationService.GetVacationByIdAsync(id);
+
+				var type = (int)Vacation.VacationType;
+
+				Position = type.ToString();
 			}
 		}
 
