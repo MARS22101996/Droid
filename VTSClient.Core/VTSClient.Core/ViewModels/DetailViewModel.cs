@@ -186,6 +186,17 @@ namespace VTSClient.Core.ViewModels
 			}
 		}
 
+		private string _position = "";
+
+		public string Position
+		{
+			get { return _position; }
+			set
+			{
+				_position = value;
+				RaisePropertyChanged(() => Position);
+			}
+		}
 		public DetailViewModel(IApiVacationService vacationService)
 		{
 			_vacationService = vacationService;
@@ -292,7 +303,9 @@ namespace VTSClient.Core.ViewModels
 
 			Page = (int) Vacation.VacationType;
 
-            if (_id == Guid.Empty)
+			Position = Page.ToString();
+
+			if (_id == Guid.Empty)
             {
 				TypeText = Enum.GetName(typeof(VacationType), 0);
             }
@@ -322,6 +335,8 @@ namespace VTSClient.Core.ViewModels
 
 		private void Save()
 		{
+			SetType();
+
 			ResetDates();
 
 			if (_id == Guid.Empty)
@@ -343,6 +358,14 @@ namespace VTSClient.Core.ViewModels
 			var monthEnd = GetMonthByName(_endMonth);
 
 			Vacation.End = ConfigureDate(_endYear, _endDay, monthEnd);
+		}
+
+		private void SetType()
+		{
+			if (Position != "")
+			{
+				Vacation.VacationType = VacationTypeSetting.GetType(int.Parse(Position));
+			}
 		}
 
 		private int GetMonthByName(string name)

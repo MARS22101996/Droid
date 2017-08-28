@@ -1879,14 +1879,14 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f06000b
 			public const int MvxBindingTagUnique = 2131099659;
 			
-			// aapt resource value: 0x7f06008d
-			public const int Save = 2131099789;
+			// aapt resource value: 0x7f06008e
+			public const int Save = 2131099790;
 			
-			// aapt resource value: 0x7f060095
-			public const int ToDetails = 2131099797;
+			// aapt resource value: 0x7f060096
+			public const int ToDetails = 2131099798;
 			
-			// aapt resource value: 0x7f060077
-			public const int action0 = 2131099767;
+			// aapt resource value: 0x7f060078
+			public const int action0 = 2131099768;
 			
 			// aapt resource value: 0x7f06004a
 			public const int action_bar = 2131099722;
@@ -1909,17 +1909,17 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f060027
 			public const int action_bar_title = 2131099687;
 			
-			// aapt resource value: 0x7f060074
-			public const int action_container = 2131099764;
+			// aapt resource value: 0x7f060075
+			public const int action_container = 2131099765;
 			
 			// aapt resource value: 0x7f06004b
 			public const int action_context_bar = 2131099723;
 			
-			// aapt resource value: 0x7f06007b
-			public const int action_divider = 2131099771;
+			// aapt resource value: 0x7f06007c
+			public const int action_divider = 2131099772;
 			
-			// aapt resource value: 0x7f060075
-			public const int action_image = 2131099765;
+			// aapt resource value: 0x7f060076
+			public const int action_image = 2131099766;
 			
 			// aapt resource value: 0x7f060003
 			public const int action_menu_divider = 2131099651;
@@ -1936,11 +1936,11 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f060029
 			public const int action_mode_close_button = 2131099689;
 			
-			// aapt resource value: 0x7f060076
-			public const int action_text = 2131099766;
+			// aapt resource value: 0x7f060077
+			public const int action_text = 2131099767;
 			
-			// aapt resource value: 0x7f060084
-			public const int actions = 2131099780;
+			// aapt resource value: 0x7f060085
+			public const int actions = 2131099781;
 			
 			// aapt resource value: 0x7f06002a
 			public const int activity_chooser_view_content = 2131099690;
@@ -1954,8 +1954,8 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f060020
 			public const int always = 2131099680;
 			
-			// aapt resource value: 0x7f060071
-			public const int avatarImg = 2131099761;
+			// aapt resource value: 0x7f060072
+			public const int avatarImg = 2131099762;
 			
 			// aapt resource value: 0x7f06001d
 			public const int beginning = 2131099677;
@@ -1984,17 +1984,17 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f060031
 			public const int buttonPanel = 2131099697;
 			
-			// aapt resource value: 0x7f06006d
-			public const int buttonSignIn = 2131099757;
+			// aapt resource value: 0x7f06006e
+			public const int buttonSignIn = 2131099758;
 			
-			// aapt resource value: 0x7f060078
-			public const int cancel_action = 2131099768;
+			// aapt resource value: 0x7f060079
+			public const int cancel_action = 2131099769;
 			
 			// aapt resource value: 0x7f060041
 			public const int checkbox = 2131099713;
 			
-			// aapt resource value: 0x7f060080
-			public const int chronometer = 2131099776;
+			// aapt resource value: 0x7f060081
+			public const int chronometer = 2131099777;
 			
 			// aapt resource value: 0x7f060021
 			public const int collapseActionView = 2131099681;
@@ -2002,8 +2002,8 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f060034
 			public const int contentPanel = 2131099700;
 			
-			// aapt resource value: 0x7f06006f
-			public const int countriesView = 2131099759;
+			// aapt resource value: 0x7f060070
+			public const int countriesView = 2131099760;
 			
 			// aapt resource value: 0x7f06003b
 			public const int custom = 2131099707;
@@ -2020,8 +2020,8 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f06000f
 			public const int disableHome = 2131099663;
 			
-			// aapt resource value: 0x7f06006e
-			public const int drawerLayout = 2131099758;
+			// aapt resource value: 0x7f06006f
+			public const int drawerLayout = 2131099759;
 			
 			// aapt resource value: 0x7f06004c
 			public const int edit_query = 2131099724;
@@ -2029,20 +2029,20 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f06001e
 			public const int end = 2131099678;
 			
-			// aapt resource value: 0x7f060064
-			public const int endDateTextView = 2131099748;
-			
 			// aapt resource value: 0x7f060065
-			public const int endMonthTextView = 2131099749;
+			public const int endDateTextView = 2131099749;
 			
 			// aapt resource value: 0x7f060066
-			public const int endYearTextView = 2131099750;
+			public const int endMonthTextView = 2131099750;
 			
-			// aapt resource value: 0x7f06008a
-			public const int end_padder = 2131099786;
+			// aapt resource value: 0x7f060067
+			public const int endYearTextView = 2131099751;
 			
-			// aapt resource value: 0x7f06006a
-			public const int errorText = 2131099754;
+			// aapt resource value: 0x7f06008b
+			public const int end_padder = 2131099787;
+			
+			// aapt resource value: 0x7f06006b
+			public const int errorText = 2131099755;
 			
 			// aapt resource value: 0x7f06002b
 			public const int expand_activities_button = 2131099691;
@@ -2050,8 +2050,8 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f060040
 			public const int expanded_menu = 2131099712;
 			
-			// aapt resource value: 0x7f060072
-			public const int fullName = 2131099762;
+			// aapt resource value: 0x7f060073
+			public const int fullName = 2131099763;
 			
 			// aapt resource value: 0x7f060005
 			public const int home = 2131099653;
@@ -2062,8 +2062,8 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f06002f
 			public const int icon = 2131099695;
 			
-			// aapt resource value: 0x7f060085
-			public const int icon_group = 2131099781;
+			// aapt resource value: 0x7f060086
+			public const int icon_group = 2131099782;
 			
 			// aapt resource value: 0x7f060022
 			public const int ifRoom = 2131099682;
@@ -2071,20 +2071,20 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f06002c
 			public const int image = 2131099692;
 			
-			// aapt resource value: 0x7f06008e
-			public const int imageView1 = 2131099790;
+			// aapt resource value: 0x7f06008f
+			public const int imageView1 = 2131099791;
 			
-			// aapt resource value: 0x7f060081
-			public const int info = 2131099777;
+			// aapt resource value: 0x7f060082
+			public const int info = 2131099778;
 			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
 			
-			// aapt resource value: 0x7f060086
-			public const int line1 = 2131099782;
+			// aapt resource value: 0x7f060087
+			public const int line1 = 2131099783;
 			
-			// aapt resource value: 0x7f060088
-			public const int line3 = 2131099784;
+			// aapt resource value: 0x7f060089
+			public const int line3 = 2131099785;
 			
 			// aapt resource value: 0x7f06000c
 			public const int listMode = 2131099660;
@@ -2092,14 +2092,14 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f06002e
 			public const int list_item = 2131099694;
 			
-			// aapt resource value: 0x7f06006b
-			public const int login = 2131099755;
+			// aapt resource value: 0x7f06006c
+			public const int login = 2131099756;
 			
-			// aapt resource value: 0x7f06007a
-			public const int media_actions = 2131099770;
+			// aapt resource value: 0x7f06007b
+			public const int media_actions = 2131099771;
 			
-			// aapt resource value: 0x7f060070
-			public const int menuList = 2131099760;
+			// aapt resource value: 0x7f060071
+			public const int menuList = 2131099761;
 			
 			// aapt resource value: 0x7f06001f
 			public const int middle = 2131099679;
@@ -2107,8 +2107,8 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f060017
 			public const int multiply = 2131099671;
 			
-			// aapt resource value: 0x7f06008c
-			public const int mytext = 2131099788;
+			// aapt resource value: 0x7f06008d
+			public const int mytext = 2131099789;
 			
 			// aapt resource value: 0x7f060023
 			public const int never = 2131099683;
@@ -2119,20 +2119,23 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f06000d
 			public const int normal = 2131099661;
 			
-			// aapt resource value: 0x7f060083
-			public const int notification_background = 2131099779;
+			// aapt resource value: 0x7f060084
+			public const int notification_background = 2131099780;
+			
+			// aapt resource value: 0x7f06007e
+			public const int notification_main_column = 2131099774;
 			
 			// aapt resource value: 0x7f06007d
-			public const int notification_main_column = 2131099773;
-			
-			// aapt resource value: 0x7f06007c
-			public const int notification_main_column_container = 2131099772;
+			public const int notification_main_column_container = 2131099773;
 			
 			// aapt resource value: 0x7f060033
 			public const int parentPanel = 2131099699;
 			
-			// aapt resource value: 0x7f06006c
-			public const int password = 2131099756;
+			// aapt resource value: 0x7f06006d
+			public const int password = 2131099757;
+			
+			// aapt resource value: 0x7f060061
+			public const int positionValue = 2131099745;
 			
 			// aapt resource value: 0x7f060006
 			public const int progress_circular = 2131099654;
@@ -2143,23 +2146,23 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f060043
 			public const int radio = 2131099715;
 			
-			// aapt resource value: 0x7f060068
-			public const int radioButtonApproved = 2131099752;
-			
 			// aapt resource value: 0x7f060069
-			public const int radioButtonClosed = 2131099753;
+			public const int radioButtonApproved = 2131099753;
 			
-			// aapt resource value: 0x7f060067
-			public const int radioGroup1 = 2131099751;
+			// aapt resource value: 0x7f06006a
+			public const int radioButtonClosed = 2131099754;
 			
-			// aapt resource value: 0x7f060090
-			public const int relativeLayout1 = 2131099792;
+			// aapt resource value: 0x7f060068
+			public const int radioGroup1 = 2131099752;
 			
-			// aapt resource value: 0x7f060082
-			public const int right_icon = 2131099778;
+			// aapt resource value: 0x7f060091
+			public const int relativeLayout1 = 2131099793;
 			
-			// aapt resource value: 0x7f06007e
-			public const int right_side = 2131099774;
+			// aapt resource value: 0x7f060083
+			public const int right_icon = 2131099779;
+			
+			// aapt resource value: 0x7f06007f
+			public const int right_side = 2131099775;
 			
 			// aapt resource value: 0x7f060018
 			public const int screen = 2131099672;
@@ -2203,11 +2206,11 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f060057
 			public const int search_voice_btn = 2131099735;
 			
-			// aapt resource value: 0x7f06008b
-			public const int segmentName = 2131099787;
+			// aapt resource value: 0x7f06008c
+			public const int segmentName = 2131099788;
 			
-			// aapt resource value: 0x7f060073
-			public const int segmentView = 2131099763;
+			// aapt resource value: 0x7f060074
+			public const int segmentView = 2131099764;
 			
 			// aapt resource value: 0x7f060058
 			public const int select_dialog_listview = 2131099736;
@@ -2242,17 +2245,17 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f060060
 			public const int startDateLayout = 2131099744;
 			
-			// aapt resource value: 0x7f060061
-			public const int startDateTextView = 2131099745;
-			
 			// aapt resource value: 0x7f060062
-			public const int startMonthTextView = 2131099746;
+			public const int startDateTextView = 2131099746;
 			
 			// aapt resource value: 0x7f060063
-			public const int startYearTextView = 2131099747;
+			public const int startMonthTextView = 2131099747;
 			
-			// aapt resource value: 0x7f060079
-			public const int status_bar_latest_event_content = 2131099769;
+			// aapt resource value: 0x7f060064
+			public const int startYearTextView = 2131099748;
+			
+			// aapt resource value: 0x7f06007a
+			public const int status_bar_latest_event_content = 2131099770;
 			
 			// aapt resource value: 0x7f060044
 			public const int submenuarrow = 2131099716;
@@ -2263,11 +2266,11 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f06000e
 			public const int tabMode = 2131099662;
 			
-			// aapt resource value: 0x7f060089
-			public const int text = 2131099785;
+			// aapt resource value: 0x7f06008a
+			public const int text = 2131099786;
 			
-			// aapt resource value: 0x7f060087
-			public const int text2 = 2131099783;
+			// aapt resource value: 0x7f060088
+			public const int text2 = 2131099784;
 			
 			// aapt resource value: 0x7f060038
 			public const int textSpacerNoButtons = 2131099704;
@@ -2275,11 +2278,11 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f060037
 			public const int textSpacerNoTitle = 2131099703;
 			
-			// aapt resource value: 0x7f06008f
-			public const int textView1 = 2131099791;
+			// aapt resource value: 0x7f060090
+			public const int textView1 = 2131099792;
 			
-			// aapt resource value: 0x7f06007f
-			public const int time = 2131099775;
+			// aapt resource value: 0x7f060080
+			public const int time = 2131099776;
 			
 			// aapt resource value: 0x7f060030
 			public const int title = 2131099696;
@@ -2302,17 +2305,17 @@ namespace VTSClient.Droid
 			// aapt resource value: 0x7f060015
 			public const int useLogo = 2131099669;
 			
-			// aapt resource value: 0x7f060092
-			public const int vacationDate = 2131099794;
-			
-			// aapt resource value: 0x7f060091
-			public const int vacationImg = 2131099793;
-			
 			// aapt resource value: 0x7f060093
-			public const int vacationStatus = 2131099795;
+			public const int vacationDate = 2131099795;
+			
+			// aapt resource value: 0x7f060092
+			public const int vacationImg = 2131099794;
 			
 			// aapt resource value: 0x7f060094
-			public const int vacationType = 2131099796;
+			public const int vacationStatus = 2131099796;
+			
+			// aapt resource value: 0x7f060095
+			public const int vacationType = 2131099797;
 			
 			// aapt resource value: 0x7f060059
 			public const int viewPager = 2131099737;

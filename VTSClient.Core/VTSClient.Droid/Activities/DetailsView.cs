@@ -10,13 +10,20 @@ using VTSClient.DAL.Enums;
 using VTSClient.Droid.Adapters;
 using VTSClient.Droid.Infrastracture;
 using VTSClient.Droid.Settings;
+using VacationTypeSetting = VTSClient.Droid.Settings.VacationTypeSetting;
 
 namespace VTSClient.Droid.Activities
 {
     [Activity(Label = "Details", Icon = "@drawable/icon", Theme = "@style/MyTheme.Main", MainLauncher = false)]
     public class DetailsView : MvxAppCompatActivity<DetailViewModel>
 	{
-        private TextView _startDay, _startMonth, _startYear, _endDay, _endMonth, _endYear;
+        private TextView _startDay;
+		private TextView _startMonth;
+		private TextView _startYear;
+		private TextView _endDay;
+		private TextView _endMonth;
+		private TextView _endYear;
+		private TextView _positionView;
 
 		private Button _save;
 
@@ -26,13 +33,9 @@ namespace VTSClient.Droid.Activities
 
         private Android.Support.V4.App.Fragment[] _fragments;
 
-        private int _position;
-
 		protected override void OnViewModelSet()
 		{
 			base.OnViewModelSet();
-
-			_position = VacationTypeSetting.GetPosition(VacationType.Exceptional);
 
 			SetContentView(Resource.Layout.DetailsView);
 
@@ -42,15 +45,15 @@ namespace VTSClient.Droid.Activities
 
 			SupportActionBar.SetCustomView(Resource.Layout.Toolbar);
 
-			SetViewPager();
-
 			FindById();
 
 			BindEvents();
 
 			ApplyBindings();
 
-			VacationTypeSetting.SetButtonsColor(this, _position);
+			SetViewPager();
+
+			VacationTypeSetting.SetButtonsColor(this, int.Parse(_positionView.Text));
 		}
 
 		private void ApplyBindings()
@@ -79,20 +82,17 @@ namespace VTSClient.Droid.Activities
 
 			bindingSet.Bind(_endYear)
 			  .For(x=>x.Text)
-			   .To(vm => vm.EndYear);
+			  .To(vm => vm.EndYear);
 
-			//bindingSet.Bind(StatusSegment)
-			//  .For("SelectedSegment")
-			//   .To(vm => vm.StatusButtonSelectedSegment)
-			//   .WithConversion("StatusToNumber");
 
-			//bindingSet.Bind(TypeText)
-			//	.For("Text")
-			//	.To(vm => vm.TypeText);
+			bindingSet.Bind(_positionView)
+			  .For(x => x.Text)
+			  .To(vm => vm.Position);
 
-			//bindingSet.Bind(Page)
-			//	.For("CurrentPage")
-			//	.To(vm => vm.Page);
+
+			bindingSet.Bind(_positionView)
+			  .For("Hidden")
+			  .To(vm => vm.IsDatePickerToolbar);
 
 			bindingSet.Bind(_approved)
 			   .To(vm => vm.ChangeToApprovedCommand);
@@ -102,10 +102,6 @@ namespace VTSClient.Droid.Activities
 
 			bindingSet.Bind(_save)
 			   .To(vm => vm.SaveCommand);
-
-			//bindingSet.Bind(Page)
-			//   .For("ValueChanged")
-			//   .To(vm => vm.SwipeEventCommand);
 
 			bindingSet.Apply();
 		}
@@ -123,6 +119,8 @@ namespace VTSClient.Droid.Activities
 			_approved = FindViewById<RadioButton>(Resource.Id.radioButtonApproved);
 			_closed = FindViewById<RadioButton>(Resource.Id.radioButtonClosed);
 			_save = FindViewById<Button>(Resource.Id.Save);
+
+			_positionView = FindViewById<TextView>(Resource.Id.positionValue);
 		}
 
 		private void SetFragment()
@@ -143,7 +141,9 @@ namespace VTSClient.Droid.Activities
 
 			_viewPager.Adapter = new TypesAdapter(SupportFragmentManager, _fragments);
 
-			_viewPager.SetCurrentItem(_position, true);
+			_viewPager.SetCurrentItem(int.Parse(_positionView.Text), true);
+
+			_viewPager.PageSelected += Item_OnClick;
 		}
 
 
@@ -191,8 +191,6 @@ namespace VTSClient.Droid.Activities
 			_endMonth.Click += DateEndSelect_OnClick;
 			_endYear.Click += DateEndSelect_OnClick;
 
-			_viewPager.PageSelected += Item_OnClick;
-
 			SupportFragmentManager.BackStackChanged += OnBackStackChanged;
 		}
 
@@ -205,7 +203,8 @@ namespace VTSClient.Droid.Activities
 		private void OnItemClick(int position)
 		{
 			VacationTypeSetting.SetButtonsColor(this, position);
-			_position = position;
+
+			_positionView.Text = position.ToString();
 		}
 	}
 }

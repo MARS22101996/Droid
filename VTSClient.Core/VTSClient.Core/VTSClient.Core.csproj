@@ -38,6 +38,7 @@
     <Compile Include="Infrastructure\Automapper\Profiles\DtoToEntityProfile.cs" />
     <Compile Include="Infrastructure\Automapper\Profiles\EntityToDtoProfile.cs" />
     <Compile Include="Infrastructure\DI\CoreSetup.cs" />
+    <Compile Include="Infrastructure\Extentions\VacationTypeSetting.cs" />
     <Compile Include="Models\VacationCoreModel.cs" />
     <Compile Include="Models\VacationData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

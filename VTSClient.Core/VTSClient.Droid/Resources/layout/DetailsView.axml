@@ -52,6 +52,17 @@
             android:id="@+id/startDateLayout"
             android:layout_marginRight="10dp"
             android:orientation="horizontal">
+            <TextView
+               xmlns:local="http://schemas.android.com/apk/res-auto"
+               android:layout_width="match_parent"
+               android:layout_height="60.5dp"
+               android:id="@+id/positionValue"
+               android:background="@color/background_floating_material_light"
+               android:layout_marginRight="60.5dp"
+               android:layout_marginLeft="62.5dp"
+               android:layout_marginTop="20.5dp"
+               android:layout_marginBottom="0.5dp" 
+               local:MvxBind="Text Position, Mode=TwoWay"/>
             <TextView  xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:local="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/startDateTextView"
