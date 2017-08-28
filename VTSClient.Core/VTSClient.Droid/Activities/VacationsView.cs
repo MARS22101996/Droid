@@ -44,30 +44,7 @@ namespace VTSClient.Droid.Activities
 
 			_contriesRecyclerView.SetLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.Vertical, false));
 
-			_drawerToggle = new ActionBarDrawerToggle(this, _drawerLayout, Resource.String.DrawerOpenDescription,
-				Resource.String.DrawerCloseDescription);
-
-			_drawerLayout.SetDrawerListener(_drawerToggle);
-
-			SetDrawerListView();
-
 			ApplyBindings();
-		}
-
-		private void SetDrawerListView()
-		{
-			_drawerListView = FindViewById<ListView>(Resource.Id.menuList);
-
-			var userView = LayoutInflater.Inflate(Resource.Layout.UserInfo, _drawerListView, false);
-
-			userView.Clickable = false;
-
-			_drawerListView.AddHeaderView(userView);
-
-			_drawerListView.Adapter = new ArrayAdapter<string>(this, Resource.Layout.ListViewMenuRow,
-				Resource.Id.menuRowTextView, _titles);
-
-			_drawerListView.SetItemChecked(0, true);
 		}
 
 		private void ApplyBindings()

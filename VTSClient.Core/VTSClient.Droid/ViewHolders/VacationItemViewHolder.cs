@@ -5,7 +5,6 @@ using MvvmCross.Binding.BindingContext;
 using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Support.V7.RecyclerView;
 using VTSClient.Core.Models;
-using VTSClient.Droid.Infrastracture;
 using VTSClient.Droid.Settings;
 
 namespace VTSClient.Droid.ViewHolders

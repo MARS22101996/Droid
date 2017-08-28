@@ -1,31 +1,20 @@
 using System;
-using System.Threading.Tasks;
 using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
 using Android.Support.V4.View;
-using Android.Support.V7.App;
 using Android.Widget;
-using Autofac;
-using Javax.Security.Auth;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Droid.Support.V7.AppCompat;
-using MvvmCross.Droid.Views;
-using VTSClient.BLL.Dto;
-using VTSClient.BLL.Interfaces;
 using VTSClient.Core.Infrastructure.Extentions;
 using VTSClient.Core.ViewModels;
 using VTSClient.DAL.Enums;
 using VTSClient.Droid.Adapters;
 using VTSClient.Droid.Infrastracture;
 using VTSClient.Droid.Settings;
-using AutofacSetting = VTSClient.Droid.Autofac.AutofacSetting;
 
 namespace VTSClient.Droid.Activities
 {
     [Activity(Label = "Details", Icon = "@drawable/icon", Theme = "@style/MyTheme.Main", MainLauncher = false)]
-    public class DetailsScreenActivity : MvxAppCompatActivity<DetailViewModel>
+    public class DetailsView : MvxAppCompatActivity<DetailViewModel>
 	{
         private TextView _startDay, _startMonth, _startYear, _endDay, _endMonth, _endYear;
 
@@ -66,7 +55,7 @@ namespace VTSClient.Droid.Activities
 
 		private void ApplyBindings()
 		{
-			var bindingSet = this.CreateBindingSet<DetailsScreenActivity, DetailViewModel>();
+			var bindingSet = this.CreateBindingSet<DetailsView, DetailViewModel>();
 
 			bindingSet.Bind(_startDay)
 			   .For(x => x.Text)

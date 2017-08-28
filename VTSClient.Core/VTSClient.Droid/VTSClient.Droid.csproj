@@ -152,7 +152,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activities\DetailsScreenActivity.cs" />
+    <Compile Include="Activities\DetailsView.cs" />
     <Compile Include="Activities\LoginView.cs" />
     <Compile Include="Activities\MenuView.cs" />
     <Compile Include="Activities\VacationsView.cs" />
@@ -177,15 +177,9 @@
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\SplashScreenView.axml" />
     <AndroidResource Include="Resources\layout\LoginView.axml" />
-    <AndroidResource Include="Resources\layout\MainListView.axml" />
     <AndroidResource Include="Resources\layout\TypeRow.axml" />
     <AndroidResource Include="Resources\layout\UserInfo.axml" />
     <AndroidResource Include="Resources\layout\VacationRow.axml" />
-    <AndroidResource Include="Resources\layout\ListViewMenuRow.axml" />
-    <AndroidResource Include="Resources\layout\VacationCell.axml" />
-    <AndroidResource Include="Resources\layout\Vacations.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\Menu.axml">
       <SubType>Designer</SubType>
     </AndroidResource>

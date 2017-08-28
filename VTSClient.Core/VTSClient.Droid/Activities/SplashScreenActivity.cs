@@ -5,13 +5,13 @@ using MvvmCross.Droid.Views;
 namespace VTSClient.Droid.Activities
 {
 	[Activity(
-	   Label = "Guest Guide",
+	   Label = "Vacations",
 	   MainLauncher = true,
 	   NoHistory = true,
 	   Theme = "@style/MyTheme.Splash")]
-	public class SplashActivity : MvxSplashScreenActivity
+	public class SplashView : MvxSplashScreenActivity
 	{
-		public SplashActivity()
+		public SplashView()
 		{
 		}
 
