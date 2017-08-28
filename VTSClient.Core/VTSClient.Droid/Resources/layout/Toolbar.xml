@@ -13,7 +13,7 @@
       android:textColor="#ffffff"
       android:id="@+id/mytext"
       android:textSize="18dp" />
-  <TextView
+  <Button
       android:layout_height="wrap_content"
       android:layout_width="wrap_content"
       android:layout_alignParentRight="true"

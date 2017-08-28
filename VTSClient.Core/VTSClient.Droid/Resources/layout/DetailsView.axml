@@ -52,7 +52,8 @@
             android:id="@+id/startDateLayout"
             android:layout_marginRight="10dp"
             android:orientation="horizontal">
-            <TextView
+            <TextView  xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:local="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/startDateTextView"
                 android:text="18"
                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -61,13 +62,17 @@
                 android:textStyle="bold"
                 android:textSize="44dp"
                 android:paddingLeft="5dp"
-                android:textColor="@color/blue" />
+                android:editable="true"
+                android:enabled="true"
+                android:textColor="@color/blue"
+                local:MvxBind="Text StartDay, Mode=TwoWay"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
                 android:orientation="vertical">
-                <TextView
+              <TextView
+                    xmlns:local="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/startMonthTextView"
                     android:layout_toRightOf="@id/startDateTextView"
                     android:text="MAY"
@@ -78,8 +83,10 @@
                     android:textSize="28dp"
                     android:textStyle="bold"
                     android:paddingLeft="10dp"
-                    android:textColor="@color/blue" />
-                <TextView
+                    android:textColor="@color/blue"
+                    local:MvxBind="Text StartMonth, Mode=TwoWay"/>
+              <TextView
+                    xmlns:local="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/startYearTextView"
                     android:layout_alignParentRight="true"
                     android:layout_below="@id/startMonthTextView"
@@ -91,7 +98,8 @@
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:paddingLeft="20dp"
-                    android:textColor="@color/blue" />
+                    android:textColor="@color/blue"
+                    local:MvxBind="Text StartYear, Mode=TwoWay"/>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -99,7 +107,8 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="40dp"
             android:orientation="horizontal">
-            <TextView
+          <TextView
+                xmlns:local="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/endDateTextView"
                 android:text="18"
                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -108,13 +117,15 @@
                 android:textStyle="bold"
                 android:textSize="44dp"
                 android:paddingLeft="5dp"
-                android:textColor="@color/green" />
+                android:textColor="@color/green"
+                local:MvxBind="Text EndDay, Mode=TwoWay"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
                 android:orientation="vertical">
-                <TextView
+              <TextView
+                    xmlns:local="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/endMonthTextView"
                     android:layout_toRightOf="@id/endDateTextView"
                     android:text="MAY"
@@ -125,8 +136,10 @@
                     android:textSize="28dp"
                     android:textStyle="bold"
                     android:paddingLeft="10dp"
-                    android:textColor="@color/green" />
+                    android:textColor="@color/green"
+                    local:MvxBind="Text EndMonth, Mode=TwoWay"/>
                 <TextView
+                    xmlns:local="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/endYearTextView"
                     android:layout_alignParentRight="true"
                     android:layout_below="@id/endMonthTextView"
@@ -138,8 +151,9 @@
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:paddingLeft="20dp"
-                    android:textColor="@color/green" />
-            </LinearLayout>
+                    android:textColor="@color/green"
+                    local:MvxBind="Text EndYear, Mode=TwoWay"/>
+            </LinearLayout> 
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -160,18 +174,22 @@
             android:gravity="center_horizontal"
             android:orientation="horizontal"
             android:id="@+id/radioGroup1">
-            <RadioButton
+            <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:local="http://schemas.android.com/apk/res-auto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
                 android:buttonTint="@color/green"
                 android:text="Approved"
-                android:id="@+id/radioButtonApproved" />
+                android:id="@+id/radioButtonApproved"
+                local:MvxBind="Click ChangeToApprovedCommand"/>
             <RadioButton
+                 xmlns:local="http://schemas.android.com/apk/res-auto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Closed"
-                android:id="@+id/radioButtonClosed" />
+                android:id="@+id/radioButtonClosed"
+                local:MvxBind="Click ChangeToClosedCommand"/>
         </RadioGroup>
         <View
             android:layout_width="fill_parent"

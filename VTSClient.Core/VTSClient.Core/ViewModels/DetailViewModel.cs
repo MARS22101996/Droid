@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Linq;
 using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
 using VTSClient.BLL.Dto;
@@ -31,6 +33,10 @@ namespace VTSClient.Core.ViewModels
 		private IMvxCommand _doneCommand;
 
 		private IMvxCommand _cancelCommand;
+
+		private IMvxCommand _changeToClosedCommand;
+
+		private IMvxCommand _changeToApprovedCommand;
 
 		private bool _isStartDate;
 
@@ -189,6 +195,14 @@ namespace VTSClient.Core.ViewModels
 		                                          (_changeStatusCommand = new MvxCommand(
 			                                          ChangeStatus));
 
+		public IMvxCommand ChangeToApprovedCommand => _changeToApprovedCommand ??
+										  (_changeToApprovedCommand = new MvxCommand(
+											  ChangeStatusToApproved));
+
+		public IMvxCommand ChangeToClosedCommand => _changeToClosedCommand ??
+										  (_changeToClosedCommand = new MvxCommand(
+											  ChangeStatusToClosed));
+
 		public IMvxCommand DoneCommand => _doneCommand ??
 		                                  (_doneCommand = new MvxCommand(
 			                                  DoneButtonChoose));
@@ -308,6 +322,8 @@ namespace VTSClient.Core.ViewModels
 
 		private void Save()
 		{
+			ResetDates();
+
 			if (_id == Guid.Empty)
 			{
 				_vacationService.CreateVacationAsync(Vacation);
@@ -318,9 +334,40 @@ namespace VTSClient.Core.ViewModels
 			}			
 		}
 
+		private void ResetDates()
+		{
+			var monthStart = GetMonthByName(_startMonth);
+
+			Vacation.Start = ConfigureDate(_startYear,_startDay, monthStart);
+
+			var monthEnd = GetMonthByName(_endMonth);
+
+			Vacation.End = ConfigureDate(_endYear, _endDay, monthEnd);
+		}
+
+		private int GetMonthByName(string name)
+		{
+			return DateTime.ParseExact(name, "MMM", CultureInfo.InvariantCulture).Month;
+		}
+
+		private DateTime ConfigureDate(string year, string day, int month)
+		{
+			return new DateTime(int.Parse(year), month, int.Parse(day));
+		}
+
 		private void ChangeStatus()
 		{
 			Vacation.VacationStatus = StatusButtonSelectedSegment;
+		}
+
+		private void ChangeStatusToApproved()
+		{
+			Vacation.VacationStatus = VacationStatus.Approved;
+		}
+
+		private void ChangeStatusToClosed()
+		{
+			Vacation.VacationStatus = VacationStatus.Closed;
 		}
 
 		private void DoneButtonChoose()

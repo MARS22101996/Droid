@@ -20,6 +20,8 @@ namespace VTSClient.Droid.ViewHolders
 
 		private ImageView _picture;
 
+		private Button _toDetails;
+
 		private LinearLayoutManager _layoutManager;
 
 		public VacationItemViewHolder(View itemView, IMvxAndroidBindingContext context) : base(itemView, context)
@@ -39,6 +41,8 @@ namespace VTSClient.Droid.ViewHolders
 
 			_statusText= itemView.FindViewById<TextView>(Resource.Id.vacationStatus);
 
+			_toDetails = itemView.FindViewById<Button>(Resource.Id.ToDetails);
+
 			_layoutManager = new LinearLayoutManager(itemView.Context, LinearLayoutManager.Horizontal, false);
 
 		}
@@ -55,10 +59,13 @@ namespace VTSClient.Droid.ViewHolders
 				.For(d => d.Text)
 				.To(f => f.VacationType);
 
-
 			bindingSet.Bind(_statusText)
 				.For(d => d.Text)
 				.To(f => f.VacationStatus);
+
+
+			bindingSet.Bind(_toDetails)
+				.To(f => f.DetailCommand);
 
 			bindingSet.Apply();
 
